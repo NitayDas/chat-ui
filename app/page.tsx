@@ -75,7 +75,7 @@ export default function Home() {
       <div className="container mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-xl font-bold text-gray-800 mb-2">
-            💬 React Chat Assistant
+            💬 Chat Assistant
           </h1>
           <p className="text-gray-600 mb-4">
             Demonstrating Next.js with TypeScript, Shadcn/ui, TailwindCSS, and Prompt Kit Integration
@@ -88,12 +88,7 @@ export default function Home() {
           )}
         </div>
         
-        <ChatInterface messages={messages} />
-        <PromptKitIntegration 
-          onPromptSelect={handlePromptSelect}
-          currentMessage={currentMessage}
-          conversationHistory={messages}
-        />
+        
       </div>
     </main>
   );
