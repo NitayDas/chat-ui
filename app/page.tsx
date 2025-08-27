@@ -87,7 +87,13 @@ export default function Home() {
             </div>
           )}
         </div>
-        
+
+        <ChatInterface messages={messages} />
+        <PromptKitIntegration 
+          onPromptSelect={handlePromptSelect}
+          currentMessage={currentMessage}
+          conversationHistory={messages}
+        />
         
       </div>
     </main>
