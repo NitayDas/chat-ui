@@ -41,29 +41,24 @@ app/
   globals.css
   page.tsx        # Single-page interface with chat, suggestions, and prompt input
 components/
+  chat/
+     chatInterface.tsx
+     chatMessage.tsx
+     PromptKitIntegration.tsx
   navbar.tsx
   ui/
     button.tsx
     card.tsx
     prompt-input.tsx
     prompt-suggestion.tsx
+data/
+  messages.ts
 lib/
+  prompt-kit.ts
   utils.ts
+types/
+  chat.ts
 tailwind.config.ts
 ```
 
-## ✅ Assessment Checklist
-- Proper TypeScript usage (strict mode)
-- Effective use of shadcn/ui components (Button, Card)
-- Clean TailwindCSS styling and responsive layout
-- Prompt-style UI interactions (input, suggestions, echo replies) using static data
-- Clear README and runnable project
 
-## 📦 Optional: Use official prompt-kit
-If the reviewers want the official prompt-kit components instead of the local replicas, run:
-```bash
-# after installing and initializing shadcn in the repo
-npx shadcn add "https://prompt-kit.com/c/prompt-input.json"
-npx shadcn add "https://prompt-kit.com/c/prompt-suggestion.json"
-```
-Then adjust imports to use the generated components under `components/ui`.
